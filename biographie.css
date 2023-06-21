@@ -1,4 +1,4 @@
-/*Css of web_mim.html*/
+/*Css of biographie.html*/
 html {
 	background-color: rgb(249, 249, 249);
 }
@@ -100,5 +100,11 @@ a:active { text-decoration: none; }
 }
 
 #main img {
-	height: 80%;
+	object-fit: contain;
+	width:100%;
+	height:auto;
+}
+
+#main img:not(:first-child) {
+	margin-top: 10px;
 }

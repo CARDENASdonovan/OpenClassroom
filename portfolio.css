@@ -1,9 +1,11 @@
-/*Css of web_mim.html*/
+/*Css of portfolio.html*/
 html {
-	background-color: rgb(249, 249, 249);
+	background-color: rgb(243, 243, 243);
 }
 
 #header {
+	min-width: 1500px;
+	
 	z-index:1;
 	position: fixed;
 	top: 0;
@@ -13,7 +15,7 @@ html {
 	grid-template-rows: 100%;
 	height: 70px;
 	width: 100%;
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(243, 243, 243);
 	border-bottom: 1px solid rgb(104, 104, 104);
 }
 
@@ -93,12 +95,17 @@ a:active { text-decoration: none; }
 	margin-top: 0px;
 	margin-left: 15%;
 	margin-right: 15%;
-	height: 88%;
+	height: fit-content;
 	width: 70%;
-	background-color: rgb(226, 226, 226);
-	text-align: center;
+	background-color: rgb(238, 238, 238);
 }
 
 #main img {
-	height: 80%;
+	object-fit: contain;
+	width: 100%;
+	height: auto;
+}
+
+#main img:not(:first-child) {
+	margin-top: 10px;
 }
